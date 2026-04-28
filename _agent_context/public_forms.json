@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "forms": [
+    {
+      "entity": "stammdaten",
+      "app_id": "69f09533f5e14e96e1b508da",
+      "path": "/rest/apps/69f09533f5e14e96e1b508da/records",
+      "allowed_fields": [
+        "kunden_csv",
+        "ansprechpartner_csv",
+        "artikel_csv"
+      ],
+      "pow": true,
+      "pow_difficulty": 50000,
+      "title": "Stammdaten — Form"
+    },
+    {
+      "entity": "angebote",
+      "app_id": "69f09536915bd5d46dd0c8c5",
+      "path": "/rest/apps/69f09536915bd5d46dd0c8c5/records",
+      "allowed_fields": [
+        "ergebnis_json"
+      ],
+      "pow": true,
+      "pow_difficulty": 50000,
+      "title": "Angebote — Form"
+    }
+  ]
+}

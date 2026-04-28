@@ -1,0 +1,115 @@
+{
+  "appgroup_id": "69f0954523f93f7e4a60cbef",
+  "appgroup_name": "Angebotsmanagement",
+  "apps": {
+    "stammdaten": {
+      "app_id": "69f09533f5e14e96e1b508da",
+      "name": "Stammdaten",
+      "controls": {
+        "kunden_csv": {
+          "identifier": "kunden_csv",
+          "label": "Kunden (CSV)",
+          "type": "string",
+          "subtype": "textarea",
+          "fulltype": "string/textarea",
+          "description": "A string value that can contain multiple lines of text (or `null`/`None`).",
+          "required": null,
+          "in_list": true,
+          "in_mobile_list": true,
+          "in_text": false,
+          "in_structured_search": false,
+          "in_fulltext_search": true,
+          "in_expert_search": true
+        },
+        "ansprechpartner_csv": {
+          "identifier": "ansprechpartner_csv",
+          "label": "Ansprechpartner (CSV)",
+          "type": "string",
+          "subtype": "textarea",
+          "fulltype": "string/textarea",
+          "description": "A string value that can contain multiple lines of text (or `null`/`None`).",
+          "required": null,
+          "in_list": true,
+          "in_mobile_list": true,
+          "in_text": false,
+          "in_structured_search": false,
+          "in_fulltext_search": true,
+          "in_expert_search": true
+        },
+        "artikel_csv": {
+          "identifier": "artikel_csv",
+          "label": "Artikel (CSV)",
+          "type": "string",
+          "subtype": "textarea",
+          "fulltype": "string/textarea",
+          "description": "A string value that can contain multiple lines of text (or `null`/`None`).",
+          "required": null,
+          "in_list": true,
+          "in_mobile_list": false,
+          "in_text": false,
+          "in_structured_search": false,
+          "in_fulltext_search": true,
+          "in_expert_search": true
+        }
+      }
+    },
+    "angebote": {
+      "app_id": "69f09536915bd5d46dd0c8c5",
+      "name": "Angebote",
+      "controls": {
+        "anfrage_pdf": {
+          "identifier": "anfrage_pdf",
+          "label": "Anfrage (PDF)",
+          "type": "file",
+          "subtype": null,
+          "fulltype": "file",
+          "description": "An uploaded file (or `null`/`None`).\n\nThe field value will be the URL to download the file in the form `https://my.living-apps.de/files/69f09536915bd5d46dd0c8c5/data/<record-id>/<control-identifier>/<internal-id>` (or `null`/`None`).",
+          "required": null,
+          "in_list": true,
+          "in_mobile_list": true,
+          "in_text": true,
+          "in_structured_search": false,
+          "in_fulltext_search": true,
+          "in_expert_search": true
+        },
+        "stammdaten_ref": {
+          "identifier": "stammdaten_ref",
+          "label": "Stammdaten-Referenz",
+          "type": "applookup",
+          "subtype": "select",
+          "fulltype": "applookup/select",
+          "description": "A reference to a LivingApp record from the target lookup app 'Stammdaten' with the id `69f09533f5e14e96e1b508da` (or `null`/`None`).\n\nThe field value will be a valid record URL in the form `https://my.living-apps.de/rest/apps/69f09533f5e14e96e1b508da/<record-id>` (or `null`/`None`).\n\nDisplayed as single-select field in HTML pages.",
+          "required": null,
+          "in_list": true,
+          "in_mobile_list": true,
+          "in_text": true,
+          "in_structured_search": false,
+          "in_fulltext_search": true,
+          "in_expert_search": true,
+          "lookup_app": "https://my.living-apps.de/rest/apps/69f09533f5e14e96e1b508da"
+        },
+        "ergebnis_json": {
+          "identifier": "ergebnis_json",
+          "label": "Ergebnis-JSON",
+          "type": "string",
+          "subtype": "textarea",
+          "fulltype": "string/textarea",
+          "description": "A string value that can contain multiple lines of text (or `null`/`None`).",
+          "required": null,
+          "in_list": true,
+          "in_mobile_list": false,
+          "in_text": false,
+          "in_structured_search": false,
+          "in_fulltext_search": true,
+          "in_expert_search": true
+        }
+      }
+    }
+  },
+  "metadata": {
+    "apps_list": [
+      "Stammdaten",
+      "Angebote"
+    ]
+  }
+}
